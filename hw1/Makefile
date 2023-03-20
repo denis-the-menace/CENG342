@@ -6,10 +6,10 @@ IDIR=include
 SRCDIR=src
 OBJDIR=src/obj
 
-_DEPS = hellomake.h
+_DEPS = hellomake.h randomMatrixMultiplication.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = 20050111060.o hellofunc.o 
+_OBJ = 20050111060.o hellofunc.o randomMatrixMultiplication.o
 OBJ = $(patsubst %,$(OBJDIR)/%,$(_OBJ))
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c $(DEPS)
